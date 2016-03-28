@@ -2,24 +2,22 @@ $Count2: 8;
         @for $i from 1 through $Count2 {
           #NP1_div-#{$i} {
             background-color: red;
-            width: 50px * $i;
-            height: 120px / $i;
+            width: 50px;// * $i;
+            height: 20px;// / $i;
+            float:left;
           }
           
         }
 $Count3: 8;
         @for $i from 1 through $Count3 {
           #NP1_div-inside-#{$i} {        
-            width:40 * $i;
+            width:40px;// * $i;
+            height: 18px;/// $i;
             min-width: 30px; 
-            height: / $i;
             background:blue;  
             border:0.09em solid yellow; 
-            float:left;position:relative;
-            top:4px;height: 20px;
-            display:table-cell; 
-            vertical-align:middle; 
-            text-align:center
+            text-align:center;
+            float:left;
           }
           
         }
