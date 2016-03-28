@@ -45,3 +45,123 @@
   width: 400px;
   height: 15px;
 }
+
+#NP1_div-inside-1 {
+  width: 40;
+  min-width: 30px;
+  height: /1;
+  background: blue;
+  border: 0.09em solid yellow;
+  float: left;
+  position: relative;
+  top: 4px;
+  height: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#NP1_div-inside-2 {
+  width: 80;
+  min-width: 30px;
+  height: /2;
+  background: blue;
+  border: 0.09em solid yellow;
+  float: left;
+  position: relative;
+  top: 4px;
+  height: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#NP1_div-inside-3 {
+  width: 120;
+  min-width: 30px;
+  height: /3;
+  background: blue;
+  border: 0.09em solid yellow;
+  float: left;
+  position: relative;
+  top: 4px;
+  height: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#NP1_div-inside-4 {
+  width: 160;
+  min-width: 30px;
+  height: /4;
+  background: blue;
+  border: 0.09em solid yellow;
+  float: left;
+  position: relative;
+  top: 4px;
+  height: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#NP1_div-inside-5 {
+  width: 200;
+  min-width: 30px;
+  height: /5;
+  background: blue;
+  border: 0.09em solid yellow;
+  float: left;
+  position: relative;
+  top: 4px;
+  height: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#NP1_div-inside-6 {
+  width: 240;
+  min-width: 30px;
+  height: /6;
+  background: blue;
+  border: 0.09em solid yellow;
+  float: left;
+  position: relative;
+  top: 4px;
+  height: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#NP1_div-inside-7 {
+  width: 280;
+  min-width: 30px;
+  height: /7;
+  background: blue;
+  border: 0.09em solid yellow;
+  float: left;
+  position: relative;
+  top: 4px;
+  height: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#NP1_div-inside-8 {
+  width: 320;
+  min-width: 30px;
+  height: /8;
+  background: blue;
+  border: 0.09em solid yellow;
+  float: left;
+  position: relative;
+  top: 4px;
+  height: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
