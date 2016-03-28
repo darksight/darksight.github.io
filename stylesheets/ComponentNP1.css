@@ -2,48 +2,56 @@
   background-color: red;
   width: 50px;
   height: 20px;
+  float: left;
 }
 
 #NP1_div-2 {
   background-color: red;
   width: 50px;
   height: 20px;
+  float: left;
 }
 
 #NP1_div-3 {
   background-color: red;
   width: 50px;
   height: 20px;
+  float: left;
 }
 
 #NP1_div-4 {
   background-color: red;
   width: 50px;
   height: 20px;
+  float: left;
 }
 
 #NP1_div-5 {
   background-color: red;
   width: 50px;
   height: 20px;
+  float: left;
 }
 
 #NP1_div-6 {
   background-color: red;
   width: 50px;
   height: 20px;
+  float: left;
 }
 
 #NP1_div-7 {
   background-color: red;
   width: 50px;
   height: 20px;
+  float: left;
 }
 
 #NP1_div-8 {
   background-color: red;
   width: 50px;
   height: 20px;
+  float: left;
 }
 
 #NP1_div-inside-1 {
@@ -53,6 +61,7 @@
   background: blue;
   border: 0.09em solid yellow;
   text-align: center;
+  float: left;
 }
 
 #NP1_div-inside-2 {
@@ -62,6 +71,7 @@
   background: blue;
   border: 0.09em solid yellow;
   text-align: center;
+  float: left;
 }
 
 #NP1_div-inside-3 {
@@ -71,6 +81,7 @@
   background: blue;
   border: 0.09em solid yellow;
   text-align: center;
+  float: left;
 }
 
 #NP1_div-inside-4 {
@@ -80,6 +91,7 @@
   background: blue;
   border: 0.09em solid yellow;
   text-align: center;
+  float: left;
 }
 
 #NP1_div-inside-5 {
@@ -89,6 +101,7 @@
   background: blue;
   border: 0.09em solid yellow;
   text-align: center;
+  float: left;
 }
 
 #NP1_div-inside-6 {
@@ -98,6 +111,7 @@
   background: blue;
   border: 0.09em solid yellow;
   text-align: center;
+  float: left;
 }
 
 #NP1_div-inside-7 {
@@ -107,6 +121,7 @@
   background: blue;
   border: 0.09em solid yellow;
   text-align: center;
+  float: left;
 }
 
 #NP1_div-inside-8 {
@@ -116,4 +131,5 @@
   background: blue;
   border: 0.09em solid yellow;
   text-align: center;
+  float: left;
 }
