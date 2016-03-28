@@ -6,44 +6,44 @@
 
 #NP1_div-2 {
   background-color: red;
-  width: 100px;
-  height: 10px;
+  width: 50px;
+  height: 20px;
 }
 
 #NP1_div-3 {
   background-color: red;
-  width: 150px;
-  height: 6.66666667px;
+  width: 50px;
+  height: 20px;
 }
 
 #NP1_div-4 {
   background-color: red;
-  width: 200px;
-  height: 5px;
+  width: 50px;
+  height: 20px;
 }
 
 #NP1_div-5 {
   background-color: red;
-  width: 250px;
-  height: 4px;
+  width: 50px;
+  height: 20px;
 }
 
 #NP1_div-6 {
   background-color: red;
-  width: 300px;
-  height: 3.33333333px;
+  width: 50px;
+  height: 20px;
 }
 
 #NP1_div-7 {
   background-color: red;
-  width: 350px;
-  height: 2.85714286px;
+  width: 50px;
+  height: 20px;
 }
 
 #NP1_div-8 {
   background-color: red;
-  width: 400px;
-  height: 2.5px;
+  width: 50px;
+  height: 20px;
 }
 
 #NP1_div-inside-1 {
@@ -56,8 +56,8 @@
 }
 
 #NP1_div-inside-2 {
-  width: 80px;
-  height: 9px;
+  width: 40px;
+  height: 18px;
   min-width: 30px;
   background: blue;
   border: 0.09em solid yellow;
@@ -65,8 +65,8 @@
 }
 
 #NP1_div-inside-3 {
-  width: 120px;
-  height: 6px;
+  width: 40px;
+  height: 18px;
   min-width: 30px;
   background: blue;
   border: 0.09em solid yellow;
@@ -74,8 +74,8 @@
 }
 
 #NP1_div-inside-4 {
-  width: 160px;
-  height: 4.5px;
+  width: 40px;
+  height: 18px;
   min-width: 30px;
   background: blue;
   border: 0.09em solid yellow;
@@ -83,8 +83,8 @@
 }
 
 #NP1_div-inside-5 {
-  width: 200px;
-  height: 3.6px;
+  width: 40px;
+  height: 18px;
   min-width: 30px;
   background: blue;
   border: 0.09em solid yellow;
@@ -92,8 +92,8 @@
 }
 
 #NP1_div-inside-6 {
-  width: 240px;
-  height: 3px;
+  width: 40px;
+  height: 18px;
   min-width: 30px;
   background: blue;
   border: 0.09em solid yellow;
@@ -101,8 +101,8 @@
 }
 
 #NP1_div-inside-7 {
-  width: 280px;
-  height: 2.57142857px;
+  width: 40px;
+  height: 18px;
   min-width: 30px;
   background: blue;
   border: 0.09em solid yellow;
@@ -110,8 +110,8 @@
 }
 
 #NP1_div-inside-8 {
-  width: 320px;
-  height: 2.25px;
+  width: 40px;
+  height: 18px;
   min-width: 30px;
   background: blue;
   border: 0.09em solid yellow;
