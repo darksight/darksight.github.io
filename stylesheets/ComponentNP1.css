@@ -59,8 +59,14 @@
   min-width: 30px;
   height: 27px;
   background: blue;
+  border: 0.09em solid yellow;
   text-align: center;
   float: left;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 35px;
+  left: 1px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -70,8 +76,14 @@
   min-width: 30px;
   height: 27px;
   background: blue;
+  border: 0.09em solid yellow;
   text-align: center;
   float: left;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 35px;
+  left: 1px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -81,8 +93,14 @@
   min-width: 30px;
   height: 27px;
   background: blue;
+  border: 0.09em solid yellow;
   text-align: center;
   float: left;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 35px;
+  left: 1px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -92,8 +110,14 @@
   min-width: 30px;
   height: 27px;
   background: blue;
+  border: 0.09em solid yellow;
   text-align: center;
   float: left;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 35px;
+  left: 1px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -103,8 +127,14 @@
   min-width: 30px;
   height: 27px;
   background: blue;
+  border: 0.09em solid yellow;
   text-align: center;
   float: left;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 35px;
+  left: 1px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -114,8 +144,14 @@
   min-width: 30px;
   height: 27px;
   background: blue;
+  border: 0.09em solid yellow;
   text-align: center;
   float: left;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 35px;
+  left: 1px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -125,8 +161,14 @@
   min-width: 30px;
   height: 27px;
   background: blue;
+  border: 0.09em solid yellow;
   text-align: center;
   float: left;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 35px;
+  left: 1px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -136,8 +178,14 @@
   min-width: 30px;
   height: 27px;
   background: blue;
+  border: 0.09em solid yellow;
   text-align: center;
   float: left;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 35px;
+  left: 1px;
   display: table-cell;
   vertical-align: middle;
 }
