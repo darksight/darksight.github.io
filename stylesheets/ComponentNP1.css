@@ -2,12 +2,11 @@
   width:282px; 
   min-width: 282px; 
   height:120px;
-  border: 0.09em solid red;
   background:white;  
   border:0.19em solid grey; 
   float:left;
   position: relative; 
-  top: 35px; 
+  top: 2px; 
   left: 1px;
   background-image: url("ComponentImage_bg_01.png");
 }
