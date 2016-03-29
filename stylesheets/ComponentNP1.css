@@ -1,11 +1,11 @@
-.ComponentImage01 {
+#ComponentImage01 {
   width:282px; 
   min-width: 282px; 
   height:120px;
   border: 0.09em solid red;
   background:white;  
   border:0.19em solid grey; 
-  float:;
+  float:left;
   position: relative; 
   top: 35px; 
   left: 1px;
