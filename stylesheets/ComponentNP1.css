@@ -62,10 +62,7 @@
   border: 0.09em solid yellow;
   text-align: center;
   float: left;
-  display: table-cell;
-  vertical-align: middle;
-  display: table-cell;
-  vertical-align: middle;
+  top: 14px;
 }
 
 #NP1_div-inside-2 {
@@ -76,10 +73,7 @@
   border: 0.09em solid yellow;
   text-align: center;
   float: left;
-  display: table-cell;
-  vertical-align: middle;
-  display: table-cell;
-  vertical-align: middle;
+  top: 14px;
 }
 
 #NP1_div-inside-3 {
@@ -90,10 +84,7 @@
   border: 0.09em solid yellow;
   text-align: center;
   float: left;
-  display: table-cell;
-  vertical-align: middle;
-  display: table-cell;
-  vertical-align: middle;
+  top: 14px;
 }
 
 #NP1_div-inside-4 {
@@ -104,10 +95,7 @@
   border: 0.09em solid yellow;
   text-align: center;
   float: left;
-  display: table-cell;
-  vertical-align: middle;
-  display: table-cell;
-  vertical-align: middle;
+  top: 14px;
 }
 
 #NP1_div-inside-5 {
@@ -118,10 +106,7 @@
   border: 0.09em solid yellow;
   text-align: center;
   float: left;
-  display: table-cell;
-  vertical-align: middle;
-  display: table-cell;
-  vertical-align: middle;
+  top: 14px;
 }
 
 #NP1_div-inside-6 {
@@ -132,10 +117,7 @@
   border: 0.09em solid yellow;
   text-align: center;
   float: left;
-  display: table-cell;
-  vertical-align: middle;
-  display: table-cell;
-  vertical-align: middle;
+  top: 14px;
 }
 
 #NP1_div-inside-7 {
@@ -146,10 +128,7 @@
   border: 0.09em solid yellow;
   text-align: center;
   float: left;
-  display: table-cell;
-  vertical-align: middle;
-  display: table-cell;
-  vertical-align: middle;
+  top: 14px;
 }
 
 #NP1_div-inside-8 {
@@ -160,10 +139,7 @@
   border: 0.09em solid yellow;
   text-align: center;
   float: left;
-  display: table-cell;
-  vertical-align: middle;
-  display: table-cell;
-  vertical-align: middle;
+  top: 14px;
 }
 
 p {
@@ -171,5 +147,5 @@ p {
   text-align: center;
   font-face: Verdana;
   font-size: 7px;
-  color: white; 
+  color: white;
 }
