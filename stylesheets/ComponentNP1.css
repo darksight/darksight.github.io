@@ -151,9 +151,9 @@
 }
 
 p {
-  font-weight: strong;
+  font-weight: bolder;
   text-align: center;
   font-face: Verdana;
-  font-size: 7px;
-  color: green;
+  font-size: 8px;
+  color: white;
 }
