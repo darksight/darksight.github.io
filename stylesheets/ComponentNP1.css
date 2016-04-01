@@ -324,4 +324,16 @@ p {
   top: 10px;
 }
 
+.myButton{
+    background:url(./images/but.png) no-repeat; 
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
 
+  }
+
+  .myButton:active {
+    background:url(./images/but2.png) no-repeat;
+    background-color:red;
+  }
