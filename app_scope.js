@@ -1,5 +1,6 @@
 (function(angular) {
   'use strict';
+  alert('test inside ');
 angular.module('scopeExample', [])
   .controller('MyController', ['$scope', function($scope) {
     $scope.username = 'World';
