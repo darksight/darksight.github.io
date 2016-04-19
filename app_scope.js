@@ -1,6 +1,6 @@
 angular.module('scopeExample', [])
 .controller('MyController', ['$scope', function($scope) {
-    alert('inside sayHello');
+  alert('inside sayHello');
   $scope.username = 'World';
 
   $scope.sayHello = function() {
