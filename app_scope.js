@@ -1,5 +1,5 @@
 (function(angular) {
-  alert('test inside $scope : '+ 'o');
+  alert('test inside $scope : '+ '$scope');
   'use strict';
 angular.module('scopeExample', [])
   .controller('MyController', ['$scope', function($scope) {
