@@ -70,11 +70,17 @@
   <tr> 
     <td class="tg-yw4l">AngularJS DIV button 1</td>
     <td class="tg-yw4l">
-      <div ng-app="myApp">
-        <div ng-controller="MyAppCtrl"></div>
+      
+      <div ng-controller="MyController">
         <script type="text/javascript" src="app_scope.js"></script>
-        <script>//alert('body bottom')</script>
+      <p>Your name:
+      <input type="text" ng-model="username">
+       <button ng-click='sayHello()'>greet</button>
+       </p>
+        <hr>
+        {{greeting}}
       </div>
+      
     </td>
     <td class="tg-yw4l">ooo</td>
     <td class="tg-yw4l">ooo</td>
