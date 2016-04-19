@@ -11,6 +11,12 @@
     <STYLE TYPE="text/css"> <!-- 
       .indented { padding-left: 50pt; padding-right: 50pt; } 
     --> </STYLE>
+    
+    <script>//alert('header')</script>
+    <!--<script src="./angular.min.js"></script>-->  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
+    <!----><!----><!---->
   </head>
   <body>
     <section class="page-header">
@@ -41,7 +47,23 @@
   </tr>
   <tr> 
     <td class="tg-yw4l">Deconstruct Brief</td>
-    <td class="tg-yw4l">Analysis</td>
+    <td class="tg-yw4l">
+      <div ng-app="myApp">
+        <div ng-controller="MyAppCtrl">
+          {{variable}}
+          <button ng-click="increment()">increment</button>
+        </div>
+        <script type="text/javascript">//alert('test');</script><!---->
+        <script type="text/javascript" src="app.js"></script>
+        <script>//alert('body bottom')</script>
+      </div>
+  <!----><!----><!---->
+  <script type="text/javascript">//alert('test');</script><!---->
+  <script type="text/javascript" src="app.js"></script>
+  <script>//alert('body bottom')</script>
+</div>
+    
+    </td>
     <td class="tg-yw4l">Derived a task list</td>
     <td class="tg-yw4l"></td>
   </tr>
