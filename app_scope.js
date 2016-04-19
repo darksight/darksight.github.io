@@ -1,7 +1,7 @@
 (function(angular) {
-  alert('test inside $scope : '+ $scope +'o');
+  alert('test inside $scope : ' +'oo');
   'use strict';
-angular.module('scopeExample', [])
+var myApp = angular.module('scopeExample', [])
   .controller('MyController', ['$scope', function($scope) {
     alert('test inside 1_1');
     $scope.username = 'World';
