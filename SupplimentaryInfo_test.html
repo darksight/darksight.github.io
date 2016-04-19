@@ -70,13 +70,15 @@
   <tr> 
     <td class="tg-yw4l">AngularJS DIV button 3</td>
     <td class="tg-yw4l">
-      <!--<script type="text/javascript">alert('test');</script>-->
-      <div ng-controller="MyController" class="ng-scope ng-binding">
+      
+      <div ng-controller="MyController">
         Your name:
-        <input type="text" ng-model="username" class="ng-valid ng-dirty ng-valid-parse ng-not-empty ng-touched">
-        <button ng-click="sayHello()">greet</button>
-  <hr>
-  {{greeting}}
+        <input type="text" ng-model="username">
+        <button ng-click='sayHello()'>greet</button>
+        <hr>
+        {{greeting}}
+      </div>
+      
 </div>
       <!--
       <script type="text/javascript">alert('test');</script>-->
