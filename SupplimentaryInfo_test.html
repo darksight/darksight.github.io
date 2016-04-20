@@ -76,7 +76,14 @@
       <div ng-app="scopeExample">
         <div ng-controller="MyController">
           {{variable}}
-          <button ng-click="increment()">increment</button>
+          <button ng-click="sayHelloDummy()">greet2</button>
+          <script type="text/javascript">
+              alert('JS');
+              function sayHelloDummy(val){
+                alert('i was clicked this '+val);
+              };//sayHello()
+          </script><!---->
+          
         </div>
           Your name:
           <input type="text" ng-model="username">
@@ -86,7 +93,6 @@
           <!--<script type="text/javascript">alert('above sayHello $scope '+$scope);</script>-->
           
           
-          <script type="text/javascript">alert('JS');function sayHelloDummy(val){alert('i was clicked this '+val);};//sayHello()</script><!---->
           <!--sayHelloDummyalert(this)-->
           <!--<button ng-click="alert('hullo'")>greet 6</button>    ('button ng-click')-->
           <button ng-click="sayHello()">greet</button>
