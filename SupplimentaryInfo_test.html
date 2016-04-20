@@ -72,34 +72,34 @@
   <tr> 
     <td class="tg-yw4l">AngularJS DIV button 5</td>
     <td class="tg-yw4l">
-      <!--99999999999999999999-->
+      <!--99999999999999999999--><!----><!----><!----><!----><!---->
       <div ng-app="myApp">
         <div ng-controller="MyAppCtrl">
           {{variable}}
           <button ng-click="increment()">increment 2</button>
         </div>
-        <script type="text/javascript">//alert('test');</script><!---->
+        <script type="text/javascript">//alert('test');</script>
         <script type="text/javascript" src="app.js"></script>
         <script>//alert('body bottom')</script>
         </div>
-         <!----><!----><!---->
-        <script type="text/javascript">//alert('test');</script><!---->
+         
+        <script type="text/javascript">//alert('test');</script>
         <script type="text/javascript" src="app.js"></script>
         <script>//alert('body bottom')</script>
       <!--99999999999999999999-->
       
-      <script type="text/javascript">alert('test');</script><!---->
-      <script type="text/javascript" src="app_scope.js"></script><!---->
       <div ng-app="scopeExample">
         <div ng-controller="MyController">
-          {{variable}}
+        <script type="text/javascript">alert('test');</script><!---->
+        <script type="text/javascript" src="app_scope.js"></script><!---->
+          <button ng-click="sayHelloDummy('003')">greet2</button>
+          
           <script type="text/javascript">
               alert('JS');
               function sayHelloDummy(val){
                 alert('i was clicked this '+val);
               };//sayHello()
           </script><!---->
-          <button ng-click="sayHelloDummy('003')">greet2</button>
           
         </div>
           Your name:
@@ -108,12 +108,6 @@
           <script type="text/javascript">alert('above sayHello this '+this);</script><!---->
           <script type="text/javascript">alert('angular.version.major '+angular.version.major);</script><!---->
           <!--<script type="text/javascript">alert('above sayHello $scope '+$scope);</script>-->
-          
-          
-          <!--sayHelloDummyalert(this)-->
-          <!--<button ng-click="alert('hullo'")>greet 6</button>    ('button ng-click')-->
-          <button ng-click="sayHello()">greet</button>
-          <hr>
           {{greeting}}
         </div>
       </div>
