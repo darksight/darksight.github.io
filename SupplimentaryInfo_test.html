@@ -76,7 +76,7 @@
       <div ng-app="myApp">
         <div ng-controller="MyAppCtrl">
           {{variable}}
-          <button ng-click="increment();alert('test GOOG');">increment 2</button>
+          <button ng-click="increment();">increment 2</button>
         </div>
         <script type="text/javascript">//alert('test');</script>
         <script type="text/javascript" src="app.js"></script>
@@ -91,8 +91,8 @@
       <div ng-app="scopeExample">
         <div ng-controller="MyController">
         <script type="text/javascript">alert('test');</script><!---->
-        <script type="text/javascript" src="app_scope.js"></script><!---->
-          <button ng-click="sayHelloDummy('003')">greet2</button>
+        <script type="text/javascript" src="app_scope.js"></script>
+          <button ng-click="increment();alert('test GOOG');">greet2</button><!--sayHelloDummy('003')-->
           
           <script type="text/javascript">
               alert('JS');
