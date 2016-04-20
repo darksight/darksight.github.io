@@ -1,6 +1,3 @@
-(function(angular) {
-  alert('test inside app_scope : ' +'oo');
-  'use strict';
 var myApp = angular.module('scopeExample', [])
   .controller('MyController', ['$scope', function($scope) {
     alert('test inside 1_1');
@@ -12,4 +9,3 @@ var myApp = angular.module('scopeExample', [])
       $scope.greeting = 'Hello ' + $scope.username + '!';
     };
   }]);
-})(window.angular);
