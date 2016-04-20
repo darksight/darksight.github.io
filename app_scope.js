@@ -5,7 +5,7 @@ var myApp = angular.module('scopeExample', [])
 
     $scope.sayHello = function() {
       
-      alert('test inside 1_2');
+      //alert('test inside 1_2');
       $scope.greeting = 'Hello ' + $scope.username + '!';
     };
   }]);
