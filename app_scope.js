@@ -1,6 +1,6 @@
 var myApp = angular.module('scopeExample', [])
   .controller('MyController', ['$scope', function($scope) {
-    alert('test inside 1_1');
+    //lert('test inside 1_1');
     $scope.username = 'World';
 
     $scope.sayHello = function() {
