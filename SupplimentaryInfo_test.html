@@ -76,13 +76,13 @@
       <div ng-app="scopeExample">
         <div ng-controller="MyController">
           {{variable}}
-          <button ng-click="sayHelloDummy()">greet2</button>
           <script type="text/javascript">
               alert('JS');
               function sayHelloDummy(val){
                 alert('i was clicked this '+val);
               };//sayHello()
           </script><!---->
+          <button ng-click="sayHelloDummy('003')">greet2</button>
           
         </div>
           Your name:
