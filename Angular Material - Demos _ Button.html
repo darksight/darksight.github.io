@@ -16,5 +16,38 @@
   <script type="text/javascript">//alert('test');</script><!---->
   <script type="text/javascript" src="app.js"></script>
   <script>//alert('body bottom')</script>
+  
+  <!--777777777777777777--> 
+      <!--
+      <div ng-app="myApp">
+        <script type="text/javascript">//alert('test_MyAppCtrl_HTML_above');</script>
+        <div ng-controller="MyAppCtrl">
+          {{variable}}
+          <button ng-click="increment()">increment</button>
+        </div>
+        <script type="text/javascript">//alert('test_MyAppCtrl_HTML_below');</script>
+        <script type="text/javascript" src="app.js"></script>
+        <script>//alert('body bottom')</script>
+      </div>
+      <script>//alert('body bottom')</script></div>
+      -->
+      <!--777777777777777777-->
+      <!--88888888888888888888888888-->  
+      <div ng-app="myApp"></div><!---->
+        <div ng-app="scopeExample">
+          <script type="text/javascript">//alert(''test_scopeExample_HTML_below');</script>
+          <div ng-controller="MyController">
+            Your name:
+            <input type="text" ng-model="username">
+            <button ng-click='sayHello()'>greet</button>
+            <hr>
+              {{greeting}}
+            <hr>
+          </div> 
+          <script type="text/javascript">//alert('test_scopeExample_HTML_below');</script> 
+        </div>
+        <script type="text/javascript" src="app_scope.js"></script>
+      </div>
+      <!--88888888888888888888888888--><!---->
 </body>
 </html>
