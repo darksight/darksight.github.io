@@ -16,7 +16,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
 <script type="text/javascript">
   // App1
-  /*
+  /**/
   var shoppingCartModule = angular.module("shoppingCart", [])
   shoppingCartModule.controller("ShoppingCartController",
     function($scope) {
@@ -38,7 +38,7 @@
         $scope.items.splice(index, 1);
       }
     }
-  );*/
+  );
   // App2
   /**/
   var namesModule = angular.module("namesList", [])
@@ -57,7 +57,7 @@
   angular.bootstrap(document.getElementById("App2"), ['namesList']);
   
 </script>
-<!--
+<!---->
 <div id="App1" ng-app="shoppingCart" ng-controller="ShoppingCartController" class="ng-scope">
   <h1>Your order</h1>
   <div ng-repeat="item in items">
@@ -66,7 +66,7 @@
     <button ng-click="remove($index);">Remove</button>
   </div>
 </div>
--->
+
 <div id="App2" ng-app="namesList" ng-controller="NamesController" class="ng-scope">
   <h1>List of Names</h1>
   <div ng-repeat="_name in names">
