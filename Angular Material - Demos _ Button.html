@@ -8,7 +8,7 @@
   --><!----><!---->
 </head>
 <body>
-  <P>Changed - 8</P>
+  <P>Changed - 9</P>
   <!---->
  
 <!--BEGIN:0-->  
@@ -57,7 +57,7 @@
   */
 </script>
 
-<div id="App1" ng-app="shoppingCart" ng-controller="ShoppingCartController">
+<div id="App1" ng-app="shoppingCart" ng-controller="ShoppingCartController" class="ng-scope">
   <h1>Your order</h1>
   <div ng-repeat="item in items">
     <span>{{item.product_name}}</span>
@@ -66,7 +66,7 @@
   </div>
 </div>
 
-<div id="App2" ng-app="namesList" ng-controller="NamesController">
+<div id="App2" ng-app="namesList" ng-controller="NamesController" class="ng-scope">
   <h1>List of Names</h1>
   <div ng-repeat="_name in names">
     <p>{{_name.username}}</p>
