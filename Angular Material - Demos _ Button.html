@@ -3,95 +3,47 @@
   <title>TITLE - AngukarJS increment</title>
   <script>//alert('header')</script>
   <!--<script src="./angular.min.js"></script>-->  
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
-  <!----><!----><!---->
+  --><!----><!---->
 </head>
 <body>
-  <P>Changed - 4</P>
+  <P>Changed - 5</P>
   <!---->
-  <!--
-  <div ng-app="myApp">
-    <div ng-controller="MyAppCtrl">
-      {{variable}}
-      <button ng-click="increment()">increment</button>
-    </div>
-  </div>
-  
-  <script type="text/javascript">//alert('test');</script>
-  <script type="text/javascript" src="app.js"></script>
-  <script>//alert('body bottom')</script>
-  -->
-      <!--BEGIN 07--> <!----><!--O-->
-      <!--
-      <div ng-app="myApp">
-        <script type="text/javascript">//alert('test_MyAppCtrl_HTML_above');</script>
-        <div ng-controller="MyAppCtrl">
-          {{variable}}
-          <button ng-click="increment()">increment</button>
-        </div>
-        <script type="text/javascript">//alert('test_MyAppCtrl_HTML_below');</script>
-        <script type="text/javascript" src="app.js"></script>
-        <script>//alert('body bottom')</script>
-      </div>
-      <script>//alert('body bottom')</script></div>
-      -->
-      <!--END 07:-->
-      <!--BEGIN 09:-->
-      <br>
-      <!--
-      <div ng-app="myApp"></div>
-        <div ng-app="scopeExample">
-          <script type="text/javascript">//alert(''test_scopeExample_HTML_below');</script>
-          <div ng-controller="MyController">
-            Your name:
-            <input type="text" ng-model="username">
-            <button ng-click='sayHello()'>greet - 1</button>
-            <hr>
-              {{greeting}}
-            <hr>
-          </div> 
-          <script type="text/javascript" src="app_scope.js">//alert('test_scopeExample_HTML_below');</script> 
-        </div>
-      -->
-         
-        <script type="text/javascript">
-          var shoppingCartModule = angular.module("shoppingCart", [])
-shoppingCartModule.controller("ShoppingCartController",
-  function($scope) {
-    $scope.items = [{
-      product_name: "Product 1",
-      price: 50
-    }, {
-      product_name: "Product 2",
-      price: 20
-    }, {
-      product_name: "Product 3",
-      price: 180
-    }];
-    $scope.remove = function(index) {
-      $scope.items.splice(index, 1);
-    }
-  }
-);
-var namesModule = angular.module("namesList", [])
-namesModule.controller("NamesController",
-  function($scope) {
-    $scope.names = [{
-      username: "Nitin"
-    }, {
-      username: "Mukesh"
-    }];
-  }
-);
-angular.bootstrap(document.getElementById("App2"), ['namesList']);
-</script>
+ 
+<!--BEGIN:0-->  
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-      
-      <!-- END 09:-->
-      -->
-      <!--END 10:-->
-
+<script type="text/javascript">
+      var shoppingCartModule = angular.module("shoppingCart", [])
+      shoppingCartModule.controller("ShoppingCartController",
+        function($scope) {
+          $scope.items = [{
+            product_name: "Product 1",
+            price: 50
+          }, {
+            product_name: "Product 2",
+            price: 20
+          }, {
+            product_name: "Product 3",
+            price: 180
+          }];
+          $scope.remove = function(index) {
+            $scope.items.splice(index, 1);
+          }
+        }
+      );
+  var namesModule = angular.module("namesList", [])
+  namesModule.controller("NamesController",
+    function($scope) {
+      $scope.names = [{
+        username: "Nitin"
+      }, {
+        username: "Mukesh"
+      }];
+    }
+  );
+  angular.bootstrap(document.getElementById("App2"), ['namesList']);
+</script>
 
 <div id="App1" ng-app="shoppingCart" ng-controller="ShoppingCartController">
   <h1>Your order</h1>
@@ -108,6 +60,59 @@ angular.bootstrap(document.getElementById("App2"), ['namesList']);
     <p>{{_name.username}}</p>
   </div>
 </div>
-<!--10:-->
+<!-- END:0-->
+<!--
+  <div ng-app="myApp">
+    <div ng-controller="MyAppCtrl">
+      {{variable}}
+      <button ng-click="increment()">increment</button>
+    </div>
+  </div>
+  
+  <script type="text/javascript">//alert('test');</script>
+  <script type="text/javascript" src="app.js"></script>
+  <script>//alert('body bottom')</script>
+  -->
+      <!--BEGIN:-1 --> 
+      <!--
+      <div ng-app="myApp">
+        <script type="text/javascript">//alert('test_MyAppCtrl_HTML_above');</script>
+        <div ng-controller="MyAppCtrl">
+          {{variable}}
+          <button ng-click="increment()">increment</button>
+        </div>
+        <script type="text/javascript">//alert('test_MyAppCtrl_HTML_below');</script>
+        <script type="text/javascript" src="app.js"></script>
+        <script>//alert('body bottom')</script>
+      </div>
+      <script>//alert('body bottom')</script></div>
+      -->
+      <br>oo<br>
+      <!--
+      <div ng-app="myApp"></div>
+        <div ng-app="scopeExample">
+          <script type="text/javascript">//alert(''test_scopeExample_HTML_below');</script>
+          <div ng-controller="MyController">
+            Your name:
+            <input type="text" ng-model="username">
+            <button ng-click='sayHello()'>greet - 1</button>
+            <hr>
+              {{greeting}}
+            <hr>
+          </div> 
+          <script type="text/javascript" src="app_scope.js">//alert('test_scopeExample_HTML_below');</script> 
+        </div>
+      -->
+       
+      <!--END:-1 --> 
+   
+<!--BEGIN:1-->
+<!--END:1-->
+<!--BEGIN:2-->
+<!--END:2-->
+<!--BEGIN:3-->
+<!--END:3-->
+<!--BEGIN:4-->
+
 </body>
 </html>
