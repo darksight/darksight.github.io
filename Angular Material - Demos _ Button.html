@@ -8,7 +8,7 @@
   <!----><!----><!---->
 </head>
 <body>
-  <P>Changed - 2</P>
+  <P>Changed - 3</P>
   <!---->
   <!--
   <div ng-app="myApp">
@@ -22,7 +22,7 @@
   <script type="text/javascript" src="app.js"></script>
   <script>//alert('body bottom')</script>
   -->
-      <!--777777777777777777--> <!----><!--O-->
+      <!--BEGIN 07--> <!----><!--O-->
       <!--
       <div ng-app="myApp">
         <script type="text/javascript">//alert('test_MyAppCtrl_HTML_above');</script>
@@ -36,8 +36,10 @@
       </div>
       <script>//alert('body bottom')</script></div>
       -->
-      <!--777777777777777777-->
-      <!--BEGIN 09:--> <!--
+      <!--END 07:-->
+      <!--BEGIN 09:-->
+      vvvsvsv
+      <!--
       <div ng-app="myApp"></div>
         <div ng-app="scopeExample">
           <script type="text/javascript">//alert(''test_scopeExample_HTML_below');</script>
@@ -49,9 +51,11 @@
               {{greeting}}
             <hr>
           </div> 
-          <script type="text/javascript">//alert('test_scopeExample_HTML_below');</script> 
+          <script type="text/javascript" src="app_scope.js">//alert('test_scopeExample_HTML_below');</script> 
         </div>
-        <script type="text/javascript"><!--09: src="app_scope.js"-->
+      -->
+         
+        <script type="text/javascript">
           var shoppingCartModule = angular.module("shoppingCart", [])
 shoppingCartModule.controller("ShoppingCartController",
   function($scope) {
@@ -81,9 +85,8 @@ namesModule.controller("NamesController",
   }
 );
 angular.bootstrap(document.getElementById("App2"), ['namesList']);
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-          
-        </script>
       </div>
       <!-- END 09:-->
       -->
