@@ -70,7 +70,7 @@
     needed to be 'after' the second App</td>
   </tr>
   <tr> 
-    <td class="tg-yw4l">AngularJS DIV button 20</td>
+    <td class="tg-yw4l">AngularJS DIV button 21</td>
     <td class="tg-yw4l">
       <style>
       .red {
@@ -84,10 +84,11 @@
       </style>
       <script type="text/javascript">
           // App1
-          /**/
-          var OverTest1Module = angular.module("OverTest1", [])
+          //OverTest1
+          var OverTest1Module = angular.module("OverTest2", [])
           OverTest1Module.controller("OverTest1Controller",
             function($scope) {
+              /*
               $scope.items = [
                 {
                   product_name: "Product 1",
@@ -105,6 +106,7 @@
               $scope.remove = function(index) {
                 $scope.items.splice(index, 1);
               }
+              */
             }
           );
           
@@ -131,8 +133,9 @@
                Test 1 2 3.
           </div>
       </div>
-      
+      <!--
       <script type="text/javascript">angular.bootstrap(document.getElementById("App2"), ['OverTest2']);</script>
+      -->
       <br>
       <!--
       <div id="App2" ng-app="OverTest2" ng-controller="NamesController" class="ng-scope">
