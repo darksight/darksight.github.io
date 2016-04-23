@@ -70,7 +70,7 @@
     needed to be 'after' the second App</td>
   </tr>
   <tr> 
-    <td class="tg-yw4l">AngularJS DIV button 21</td>
+    <td class="tg-yw4l">AngularJS DIV button 22</td>
     <td class="tg-yw4l">
       <style>
       .red {
@@ -85,7 +85,7 @@
       <script type="text/javascript">
           // App1
           //OverTest1
-          var OverTest1Module = angular.module("OverTest2", [])
+          var OverTest1Module = angular.module("OverTest1", [])
           OverTest1Module.controller("OverTest1Controller",
             function($scope) {
               /*
@@ -109,7 +109,10 @@
               */
             }
           );
-          
+           var OverTest2Module = angular.module("OverTest2", [])
+          OverTest2Module.controller("OverTest2Controller",
+            function($scope) { }
+          );
           
         </script> <!--class="ng-scope"--><!-- ng-controller="OverTest1Controller"  -->
         <!--
@@ -124,7 +127,7 @@
       </div>
       -->
       <br>
-      <div id="App2" ng-app="OverTest2" ng-controller="OverTest1Controller"> <!--class="ng-scope"--><!-- ng-controller="OverTest1Controller"  -->
+      <div id="App1" ng-app="OverTest1" ng-controller="OverTest1Controller"> <!--class="ng-scope"--><!-- ng-controller="OverTest1Controller"  -->
           <div 
            class="italic" 
            ng-class="{red: hover}" 
