@@ -82,7 +82,7 @@
           color: black;
       }
       </style>
-      <div ng-app>
+      <div  id="App1" ng-app="OverTest1" ng-controller="NamesController" class="ng-scope">
           <div 
            class="italic" 
            ng-class="{red: hover}" 
@@ -92,7 +92,7 @@
           </div>
       </div>
       <br>
-      <div ng-app>
+      <div id="App2" ng-app="OverTest2" ng-controller="NamesController" class="ng-scope">
         <div 
           class="italic" 
           ng-class="{red: hover}" 
@@ -102,6 +102,19 @@
           Test 1 2 3.
         </div>
       </div>
+      
+      <div id="App2" ng-app="namesList" ng-controller="NamesController" class="ng-scope">
+  <h1>List of Names App2</h1>
+  <!-- ngRepeat: _name in names --><div ng-repeat="_name in names" class="ng-scope">
+    <p class="ng-binding">Nitin</p>
+  </div><!-- end ngRepeat: _name in names --><div ng-repeat="_name in names" class="ng-scope">
+    <p class="ng-binding">Mukesh</p>
+  </div><!-- end ngRepeat: _name in names -->
+</div>
+      
+      
+      
+      <script type="text/javascript">angular.bootstrap(document.getElementById("App2"), ['namesList']);</script>
     </td>
     <td class="tg-yw4l">...</td>
     <td class="tg-yw4l">...</td>
