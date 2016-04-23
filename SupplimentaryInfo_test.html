@@ -70,7 +70,7 @@
     needed to be 'after' the second App</td>
   </tr>
   <tr> 
-    <td class="tg-yw4l">AngularJS DIV button 25</td>
+    <td class="tg-yw4l">AngularJS DIV button 26</td>
     <td class="tg-yw4l">
       <style>
       .red {
@@ -113,6 +113,14 @@
           OverTest2Module.controller("OverTest2Controller",
             function($scope) { /*$scope.*/}
           );
+           var OverTest3Module = angular.module("OverTest3", [])
+          OverTest3Module.controller("OverTest3Controller",
+            function($scope) { /*$scope.*/}
+          );
+           var OverTest4Module = angular.module("OverTest4", [])
+          OverTest4Module.controller("OverTest4Controller",
+            function($scope) { /*$scope.*/}
+          );
           
         </script> <!--class="ng-scope"--><!-- ng-controller="OverTest1Controller"  -->
         <!--
@@ -152,6 +160,32 @@
       </div>
       <script type="text/javascript">angular.bootstrap(document.getElementById("App2"), ['OverTest2']);</script>
       
+      <br>
+      <!---->
+      <div id="App3" ng-app="OverTest3" ng-controller="OverTest3Controller" class="ng-scope">
+        <div 
+          class="italic" 
+          ng-class="{red: hover}" 
+          ng-mouseenter="hover = true"
+          ng-mouseleave="hover = false"
+        >
+          Test 1 2 3.
+        </div>
+      </div>
+      <script type="text/javascript">angular.bootstrap(document.getElementById("App3"), ['OverTest3']);</script>
+      <br>
+      <!---->
+      <div id="App4" ng-app="OverTest4" ng-controller="OverTest4Controller" class="ng-scope">
+        <div 
+          class="italic" 
+          ng-class="{red: hover}" 
+          ng-mouseenter="hover = true"
+          ng-mouseleave="hover = false"
+        >
+          Test 1 2 3.
+        </div>
+      </div>
+      <script type="text/javascript">angular.bootstrap(document.getElementById("App4"), ['OverTest4']);</script>
     </td>
     <td class="tg-yw4l">...</td>
     <td class="tg-yw4l">...</td>
