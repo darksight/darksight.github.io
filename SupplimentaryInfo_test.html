@@ -70,8 +70,28 @@
     needed to be 'after' the second App</td>
   </tr>
   <tr> 
-    <td class="tg-yw4l">AngularJS DIV button 1</td>
+    <td class="tg-yw4l">AngularJS DIV button 2</td>
     <td class="tg-yw4l">
+      <style>
+      .red {
+          background-color: red;
+      }
+      
+      .italic {
+          font-style: italic;
+          color: black;
+      }
+      </style>
+      <div ng-app>
+          <div 
+           class="italic" 
+           ng-class="{red: hover}" 
+           ng-mouseenter="hover = true"
+           ng-mouseleave="hover = false">
+               Test 1 2 3.
+          </div>
+      </div>
+      <br>
       <div ng-app>
         <div 
           class="italic" 
