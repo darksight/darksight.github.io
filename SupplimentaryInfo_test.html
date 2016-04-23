@@ -70,7 +70,7 @@
     needed to be 'after' the second App</td>
   </tr>
   <tr> 
-    <td class="tg-yw4l">AngularJS DIV button 18</td>
+    <td class="tg-yw4l">AngularJS DIV button 19</td>
     <td class="tg-yw4l">
       <style>
       .red {
@@ -119,6 +119,18 @@
                Test 1 2 3.
           </div>
       </div>
+      <br>
+      <div id="App2" ng-app="OverTest2" ng-controller="OverTest1Controller"> <!--class="ng-scope"--><!-- ng-controller="OverTest1Controller"  -->
+          <div 
+           class="italic" 
+           ng-class="{red: hover}" 
+           ng-mouseenter="hover = true"
+           ng-mouseleave="hover = false">
+               Test 1 2 3.
+          </div>
+      </div>
+      
+      <script type="text/javascript">angular.bootstrap(document.getElementById("App2"), ['OverTest2']);</script>
       <br>
       <!--
       <div id="App2" ng-app="OverTest2" ng-controller="NamesController" class="ng-scope">
