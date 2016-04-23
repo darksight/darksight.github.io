@@ -58,16 +58,20 @@
   
 </script>
 <div ng-app="shoppingCart" "ng-controller="ShoppingCartController id="App1" ng-controller="ShoppingCartController"  class="ng-scope">
+  <h1>Your order</h1>
+  <div ng-repeat="item in items">
+    
+  </div>
 </div> 
 <!---->
 <!--
 
-  <h1>Your order</h1>
-  <div ng-repeat="item in items">
+  
+  
     <span>{{item.product_name}}</span>
     <span>{{item.price | currency}}</span>
     <button ng-click="remove($index);">Remove</button>
-  </div>
+ 
 
 -->
 <div id="App2" ng-app="namesList" ng-controller="NamesController" class="ng-scope">
