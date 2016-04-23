@@ -137,10 +137,15 @@
       <br>
       <style>
         .divBut0 {
-          background-color:black;
+          background-color:lightgrey;
           color:white;
           clear:both;
           text-align:center;
+          text-color:darkgreen;
+          border-style: double;
+          border-color: black;
+          border-width: thick;
+          /*SteelBlue*/ 
           padding:5px;
         }
 }
@@ -159,7 +164,7 @@
      
       <br>
       <!---->
-      <div id="App2" ng-app="OverTest2" ng-controller="OverTest2Controller" class="ng-scope">
+      <div id="App2" ng-app="OverTest2" ng-controller="OverTest2Controller" class="ng-scope divBut0">
         <div 
           class="italic" 
           ng-class="{red: hover}" 
@@ -173,7 +178,7 @@
       
       <br>
       <!---->
-      <div id="App3" ng-app="OverTest3" ng-controller="OverTest3Controller" class="ng-scope">
+      <div id="App3" ng-app="OverTest3" ng-controller="OverTest3Controller" class="ng-scope divBut0">
         <div 
           class="italic" 
           ng-class="{red: hover}" 
@@ -186,7 +191,7 @@
       <script type="text/javascript">angular.bootstrap(document.getElementById("App3"), ['OverTest3']);</script>
       <br>
       <!---->
-      <div id="App4" ng-app="OverTest4" ng-controller="OverTest4Controller" class="ng-scope">
+      <div id="App4" ng-app="OverTest4" ng-controller="OverTest4Controller" class="ng-scope divBut0">
         <div 
           class="italic" 
           ng-class="{red: hover}" 
