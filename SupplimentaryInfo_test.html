@@ -82,7 +82,34 @@
           color: black;
       }
       </style>
-      
+      <script type="text/javascript">
+          // App1
+          /**/
+          var OverTest1Module = angular.module("OverTest1", [])
+          OverTest1Module.controller("OverTest1Controller",
+            function($scope) {
+              $scope.items = [
+                {
+                  product_name: "Product 1",
+                  price: 50
+                }, 
+                {
+                  product_name: "Product 2",
+                  price: 20
+                }, 
+                {
+                  product_name: "Product 3",
+                  price: 180
+                }
+              ];
+              $scope.remove = function(index) {
+                $scope.items.splice(index, 1);
+              }
+            }
+          );
+          
+          
+        </script>
       <div id="App1" ng-app="OverTest1" ng-controller="OverTest1Controller"> <!--class="ng-scope"--><!-- ng-controller="OverTest1Controller"  -->
           <div 
            class="italic" 
