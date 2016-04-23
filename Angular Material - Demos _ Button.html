@@ -8,7 +8,7 @@
   --><!----><!---->
 </head>
 <body>
-  <P>Changed - 26</P>
+  <P>Changed - 28</P>
   <!---->
  
 <!--BEGIN:0-->  
@@ -58,9 +58,11 @@
   
 </script>
 <div ng-app="shoppingCart" "ng-controller="ShoppingCartController id="App1" ng-controller="ShoppingCartController"  class="ng-scope">
-  <h1>Your order</h1>
+  <h1>Your order App1</h1>
   <div ng-repeat="item in items">
-    
+    <span>{{item.product_name}}</span>
+    <span>{{item.price | currency}}</span>
+    <button ng-click="remove($index);">Remove</button>
   </div>
 </div> 
 <!---->
@@ -68,14 +70,11 @@
 
   
   
-    <span>{{item.product_name}}</span>
-    <span>{{item.price | currency}}</span>
-    <button ng-click="remove($index);">Remove</button>
  
 
 -->
 <div id="App2" ng-app="namesList" ng-controller="NamesController" class="ng-scope">
-  <h1>List of Names</h1>
+  <h1>List of Names App2</h1>
   <div ng-repeat="_name in names">
     <p>{{_name.username}}</p>
   </div>
