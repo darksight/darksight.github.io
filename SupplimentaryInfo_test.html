@@ -125,6 +125,10 @@
           OverTest4Module.controller("OverTest4Controller",
             function($scope) { /*$scope.*/}
           );
+           var OverTest8Module = angular.module("OverTest8", [])
+          OverTest8Module.controller("OverTest8Controller",
+            function($scope) { /*$scope.*/}
+          );
           
         </script> <!--class="ng-scope"--><!-- ng-controller="OverTest1Controller"  -->
         <!--
@@ -195,6 +199,16 @@
           ng-mouseleave="hover = false">4.</div>
       </div>
       <script type="text/javascript">angular.bootstrap(document.getElementById("App4"), ['OverTest4']);</script>
+      <br>
+      <!---->
+      <div id="App8" ng-app="OverTest8" ng-controller="OverTest8Controller" class="ng-scope divBut0">
+        <div 
+          class="italic" 
+          ng-class="{red: hover}" 
+          ng-mouseenter="hover = true"
+          ng-mouseleave="hover = false">8.</div>
+      </div>
+      <script type="text/javascript">angular.bootstrap(document.getElementById("App8"), ['OverTest8']);</script>
     </td>
     <td class="tg-yw4l">
     	<p>DEMO - changed 2 ;ng-scope</p>
@@ -250,7 +264,7 @@
 	</script>
   <div id="myApp300Id" ng-app="myApp300" class="ng-scope"> 
     <div ng-controller="myApp300Controller">
-        <span ng-mouseenter="showIt()" ng-mouseleave="hideIt()">Hover Me - 12</span>
+        <span ng-mouseenter="showIt()" ng-mouseleave="hideIt()">Hover Me - 13</span>
         <div class="outerDiv ng-hide" ng-show="hovering">
             <p>Some content</p>
             <div class="innerDiv">
@@ -262,7 +276,20 @@
       <script type="text/javascript">angular.bootstrap(document.getElementById("myApp300Id"), ['myApp300']);</script>
 <!-- END -->
     </td>
-    <td class="tg-yw4l">...</td>
+    <td class="tg-yw4l">
+    	
+    	<!---->
+      <div id="App8" ng-app="OverTest8" ng-controller="OverTest8Controller" class="ng-scope divBut0">
+        <div 
+          class="italic" 
+          ng-class="{red: hover}" 
+          ng-mouseenter="hover = true"
+          ng-mouseleave="hover = false">8.</div>
+      </div>
+      <script type="text/javascript">angular.bootstrap(document.getElementById("App8"), ['OverTest8']);</script>
+      
+    	
+    </td>
   </tr>
   <tr> 
     <td class="tg-yw4l">Typescript Class</td>
