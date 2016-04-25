@@ -220,10 +220,11 @@
 		}
   </style>
   <script type="text/javascript">//<![CDATA[
+		alert('Got Here! - 0');
+		alert('Got Here! - 00');
 		angular.module('myApp300', [])
 		.controller('MainCtrl', function ($scope, $timeout) {
-			
-  	alert('Got Here!');
+		alert('Got Here! - 1');
 			// start with the div hidden
 			$scope.hovering = false;
 			
@@ -247,7 +248,7 @@
 	</script>
   <div ng-app="myApp300" class="ng-scope">    
     <div ng-controller="MainCtrl" class="ng-scope">
-        <span ng-mouseenter="showIt()" ng-mouseleave="hideIt()">Hover Me - 1</span>
+        <span ng-mouseenter="showIt()" ng-mouseleave="hideIt()">Hover Me - 4</span>
         <div class="outerDiv ng-hide" ng-show="hovering">
             <p>Some content</p>
             <div class="innerDiv">
