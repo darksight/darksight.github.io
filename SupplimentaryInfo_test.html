@@ -195,7 +195,67 @@
       </div>
       <script type="text/javascript">angular.bootstrap(document.getElementById("App4"), ['OverTest4']);</script>
     </td>
-    <td class="tg-yw4l">...</td>
+    <td class="tg-yw4l">
+      <!-- BEGIN  -->
+  <script type="text/javascript" src="./angular.min.js"></script>
+  <style type="text/css">
+		.container {
+			width: 200px;
+		}
+		.outerDiv {
+			width: 200px;
+			height: 200px;
+			text-align:center;
+			background: yellow;
+			position:relative;
+		}
+		.innerDiv {
+			width: 100%;
+			height: 100px;
+			background: blue;
+			color:white;
+			text-align:center;
+			position:absolute;
+			bottom:0;
+		}
+  </style>
+  <script type="text/javascript">//<![CDATA[
+		angular.module('myApp300', [])
+		.controller('MainCtrl', function ($scope, $timeout) {
+			// start with the div hidden
+			$scope.hovering = false;
+			
+			// create the timer variable
+			var timer;
+			
+			// mouseenter event
+			$scope.showIt = function () {
+				timer = $timeout(function () {
+					$scope.hovering = true;
+				}, 500);
+			};
+			
+			// mouseleave event
+			$scope.hideIt = function () {
+				$timeout.cancel(timer);
+				$scope.hovering = false;
+			};
+		});
+		//]]> 
+	</script>
+  <div ng-app="myApp300" class="ng-scope">    
+    <div ng-controller="MainCtrl" class="ng-scope">
+        <span ng-mouseenter="showIt()" ng-mouseleave="hideIt()">Hover Me</span>
+        <div class="outerDiv ng-hide" ng-show="hovering">
+            <p>Some content</p>
+            <div class="innerDiv">
+                <p>More Content</p>
+            </div>
+        </div>
+    </div>    
+</div>
+<!-- END -->
+    </td>
     <td class="tg-yw4l">...</td>
   </tr>
   <tr> 
