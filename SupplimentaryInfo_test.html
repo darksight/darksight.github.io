@@ -224,6 +224,19 @@
   <script type="text/javascript">//<![CDATA[
 		alert('Got Here! - 0');
 		alert('Got Here! - 00');
+		
+		''''''''''''''''''
+		   var OverTestDelay = angular.module("myApp300", [])
+          controller("OverTest2Controller",
+            function($scope) { /*$scope.*/}
+		
+		
+		var OverTestDelay = angular.module('myApp300', [])
+		OverTestDelay.controller('MainCtrl', function ($scope, $timeout) {
+		alert('Got Here! - 1');
+		'''''''''''''''''''
+		
+		
 		angular.module('myApp300', [])
 		.controller('MainCtrl', function ($scope, $timeout) {
 		alert('Got Here! - 1');
@@ -248,9 +261,9 @@
 		});
 		//]]> 
 	</script>
-  <div ng-app="myApp300" class="ng-scope divBut0">  
-    <div ng-controller="MainCtrl" class="ng-scope">
-        <span ng-mouseenter="showIt()" ng-mouseleave="hideIt()">Hover Me - 5</span>
+  <div id="myApp300Id" ng-app="myApp300" class="ng-scope"> 
+    <div ng-controller="MainCtrl">
+        <span ng-mouseenter="showIt()" ng-mouseleave="hideIt()">Hover Me - 8</span>
         <div class="outerDiv ng-hide" ng-show="hovering">
             <p>Some content</p>
             <div class="innerDiv">
@@ -258,7 +271,8 @@
             </div>
         </div>
     </div>    
-</div>
+  </div>
+      <script type="text/javascript">angular.bootstrap(document.getElementById("myApp300Id"), ['myApp300']);</script>
 <!-- END -->
     </td>
     <td class="tg-yw4l">...</td>
