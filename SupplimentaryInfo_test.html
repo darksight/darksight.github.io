@@ -269,10 +269,17 @@
 <!-- END -->
     </td>
     <td class="tg-yw4l">
+    	
     	<!---->
       <style>
       .red {
           background-color: red;
+      }
+      .green {
+          background-color: green;
+      }
+      .yellow {
+          background-color: green;
       }
       
       .italic {
@@ -281,12 +288,21 @@
       }
       </style>
     	<!---->
-      <div id="App8" ng-app="OverTest8" ng-controller="OverTest8Controller" class="ng-scope divBut0">
+      	<!--
+      	 divBut0
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+     && {'margin-left': '100px'}
+     && {border-bottom: 1px solid #ddd}
+     border-bottom: 1px solid #ddd;
+      	-->
+      <div id="App8" ng-app="OverTest8" ng-controller="OverTest8Controller" class="ng-scope && {border-bottom: 1px solid #ddd}" >
         <div 
           class="italic" 
           ng-class="{red: hover}" 
           ng-mouseenter="hover = true"
-          ng-mouseleave="hover = false">8.</div>
+          ng-mouseleave="hover = false">9.</div>
       </div>
       <script type="text/javascript">angular.bootstrap(document.getElementById("App8"), ['OverTest8']);</script>
       
