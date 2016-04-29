@@ -381,8 +381,9 @@
   <!-- : undefined -->
 <!--ng-app-->
 <ng-App id="myAppSearchId" ng-app="myAppSearch" class="ng-scope">
-  <ng-View class="ng-scope"><span class="ng-scope">
-  Search: </span><input type="text" ng-model="search.name" class="ng-scope ng-pristine ng-valid">
+  <ng-View class="ng-scope">
+  	<!--<span class="ng-scope">Search: </span>-->
+  <input type="text" ng-model="search.name" class="ng-scope ng-pristine ng-valid">
   <ul class="ng-scope">
     <!-- ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
       <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
