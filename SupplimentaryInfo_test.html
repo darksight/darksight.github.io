@@ -367,6 +367,94 @@
   <!--END-->
     </td>
   </tr>
+  
+  <tr> 
+    <td class="tg-yw4l">Local (Filter)</td>
+    <td class="tg-yw4l">
+  <!---->
+  <ng-view></ng-view>
+
+<!-- Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+
+<!-- Template --> 
+<script type="text/ng-template" id="/todos.html">
+  Search: 1 <input type="text" ng-model="search.name">
+  <ul>
+    <li ng-repeat="todo in todos | filter: search">
+      <input type="checkbox" ng-model="todo.completed">
+      <a href="#/{{$index}}">{{todo.name}}</a>
+    </li>
+  </ul>
+</script>
+
+<script type="text/ng-template" id="/todoDetails.html">
+  <h1>{{ todo.name }}</h1>
+  completed: <input type="checkbox" ng-model="todo.completed">
+  note: <textarea>{{ todo.note }}</textarea>
+</script>
+
+<script>
+  angular.module('app', ['ngRoute'])
+
+    //---------------
+    // Services
+    //---------------
+
+    .factory('Todos', function(){
+      return [
+        { name: 'AngularJS Directives', completed: true, note: 'add notes...' },
+        { name: 'Data binding', completed: true, note: 'add notes...' },
+        { name: '$scope', completed: true, note: 'add notes...' },
+        { name: 'Controllers and Modules', completed: true, note: 'add notes...' },
+        { name: 'Templates and routes', completed: true, note: 'add notes...' },
+        { name: 'Filters and Services', completed: false, note: 'add notes...' },
+        { name: 'Get started with Node/ExpressJS', completed: false, note: 'add notes...' },
+        { name: 'Setup MongoDB database', completed: false, note: 'add notes...' },
+        { name: 'Be awesome!', completed: false, note: 'add notes...' },
+      ];
+    })
+
+    //---------------
+    // Controllers
+    //---------------
+
+    .controller('TodoController', ['$scope', 'Todos', function ($scope, Todos) {
+      $scope.todos = Todos;
+    }])
+
+    .controller('TodoDetailCtrl', ['$scope', '$routeParams', 'Todos', function ($scope, $routeParams, Todos) {
+      $scope.todo = Todos[$routeParams.id];
+    }])
+
+    //---------------
+    // Routes
+    //---------------
+
+    .config(['$routeProvider', function ($routeProvider) {
+      $routeProvider
+        .when('/', {
+          templateUrl: '/todos.html',
+          controller: 'TodoController'
+        })
+
+        .when('/:id', {
+          templateUrl: '/todoDetails.html',
+          controller: 'TodoDetailCtrl'
+       });
+    }]);
+</script>
+
+
+  <!---->
+    </td>
+    <td class="tg-yw4l">...</td>
+    <td class="tg-yw4l">
+    	<p>had to upgrade Chrome to stop Chrome from Stopping local Angular Apps<br>
+    	error "A history state object with URL cannot be created in a document with origin 'null' and URL"</p>
+    	</td>
+  </tr>
   <tr> 
     <td class="tg-yw4l">Angular JS Button</td>
     <td class="tg-yw4l">...</td>
