@@ -369,16 +369,16 @@
   </tr>
   
   <tr> 
-    <td class="tg-yw4l">Local (Filter) 5 </td>
+    <td class="tg-yw4l">Local (Filter) 6 </td>
     <td class="tg-yw4l">
   <!---->
   <!---->
   <!---->
   <!--BEGIN Local (Filter)-->
   
-  <!-- ngView: undefined -->
-  <ng-view  id="myAppSearchId" ng-app="myAppSearch" class="ng-scope">
-  	<span class="ng-scope">
+  <!-- : undefined -->
+<!--ng-app-->
+  <ng-View id="myAppSearchId" ng-app="myAppSearch" class="ng-scope"><span class="ng-scope">
   Search: </span><input type="text" ng-model="search.name" class="ng-scope ng-pristine ng-valid">
   <ul class="ng-scope">
     <!-- ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
@@ -410,7 +410,7 @@
       <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/8" class="ng-binding">Be awesome!</a>
     </li><!-- end ngRepeat: todo in todos | filter: search -->
   </ul>
-</ng-view>
+</ng-View ><!-- ng-app -->
 
 <!-- Libraries -->
 <script src="./angular.min.js"></script>
@@ -483,7 +483,8 @@
        });
     }]);
 </script>
-<script type="text/javascript">angular.bootstrap(document.getElementById("myAppSearchId"), ['myAppSearch']);</script>
+
+<script type="text/javascript">angular.bootstrap(document.getElementById("myAppSearchId"), ['myAppSearch']);</script><!---->
   <!---->
   <!-- END Local (Filter)-->
   <!---->
