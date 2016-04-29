@@ -369,7 +369,7 @@
   </tr>
   
   <tr> 
-    <td class="tg-yw4l">Local (Filter) 4 </td>
+    <td class="tg-yw4l">Local (Filter) 5 </td>
     <td class="tg-yw4l">
   <!---->
   <!---->
@@ -377,7 +377,8 @@
   <!--BEGIN Local (Filter)-->
   
   <!-- ngView: undefined -->
-  <ng-view class="ng-scope"><span class="ng-scope">
+  <ng-view  id="myAppSearchId" ng-app="myAppSearch" class="ng-scope">
+  	<span class="ng-scope">
   Search: </span><input type="text" ng-model="search.name" class="ng-scope ng-pristine ng-valid">
   <ul class="ng-scope">
     <!-- ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
@@ -482,7 +483,7 @@
        });
     }]);
 </script>
-
+<script type="text/javascript">angular.bootstrap(document.getElementById("myAppSearchId"), ['myAppSearch']);</script>
   <!---->
   <!-- END Local (Filter)-->
   <!---->
