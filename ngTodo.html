@@ -2,7 +2,7 @@
   <title>ngTodo</title>
 </head>
 <body>
-<p>OK - 5 alert </p>
+<p>OK - 6 alert </p>
 
 <!-- Libraries -->
 <script src="./angular.min.js"></script>
@@ -178,6 +178,7 @@
 </script>
 
 <script>
+alert('alert here');
   angular.module('app', ['ngRoute'])
 
     //---------------
@@ -185,7 +186,7 @@
     //---------------
 
     .factory('Todos', function(){
-      alert('alert here');
+      
       return [
         { name: 'AngularJS Directives', completed: true, note: 'add notes...' },
         { name: 'Data binding', completed: true, note: 'add notes...' },
