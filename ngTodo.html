@@ -1,6 +1,8 @@
-<html ng-app="app" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+<html ng-app="app" class="ng-scope">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
   <title>ngTodo</title>
-</head>
+  </head>
 <body>
 <p>OK - 7 alert </p>
 
@@ -162,6 +164,7 @@
 
 <!-- Template -->
 <script type="text/ng-template" id="/todos.html">
+alert('alert here 2');<!---->
   Search: <input type="text" ng-model="search.name">
   <ul>
     <li ng-repeat="todo in todos | filter: search">
@@ -172,6 +175,8 @@
 </script>
 
 <script type="text/ng-template" id="/todoDetails.html">
+
+alert('alert here 3');<!---->
   <h1>{{ todo.name }}</h1>
   completed: <input type="checkbox" ng-model="todo.completed">
   note: <textarea>{{ todo.note }}</textarea>
@@ -187,7 +192,6 @@ alert('alert here 1');<!---->
     //---------------
 
     .factory('Todos', function(){
-      alert('alert here 2');<!---->
       return [
         { name: 'AngularJS Directives', completed: true, note: 'add notes...' },
         { name: 'Data binding', completed: true, note: 'add notes...' },
