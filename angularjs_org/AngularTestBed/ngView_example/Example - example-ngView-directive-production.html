@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://run.plnkr.co/hXkbE1wCLVkoHXmN/Book/Gatsby/ch/4?key=value -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  
+  <title>Example - example-ngView-directive-production</title>
+  <link href="./Example - example-ngView-directive-production_files/animations.css" rel="stylesheet" type="text/css">
+  
+
+  <script src="./Example - example-ngView-directive-production_files/angular.min.js"></script>
+  <script src="./Example - example-ngView-directive-production_files/angular-route.js"></script>
+  <script src="./Example - example-ngView-directive-production_files/angular-animate.js"></script>
+  <script src="./Example - example-ngView-directive-production_files/script.js"></script>
+  
+
+  <script type="text/javascript">
+    angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+  </script><!--<base href="/hXkbE1wCLVkoHXmN/">--><base href=".">
+</head>
+<body ng-app="ngViewExample" class="ng-scope">
+<p>Success - 03.
+</p>
+  <script type="text/javascript">alert('window.location.pathname='+window.location.pathname);</script>
+  
+  <div ng-controller="MainCtrl as main" class="ng-scope">
+  Choose:
+  <a href="./Book/Moby">Moby</a> |
+  <a href="./Book/Moby/ch/1">Moby: Ch1</a> |
+  <a href="./Book/Gatsby">Gatsby</a> |
+  <a href="./Book/Gatsby/ch/4?key=value">Gatsby: Ch4</a> |
+  <a href="./Book/Scarlet">Scarlet Letter</a><br>
+
+  <div class="view-animate-container">
+    <!-- ngView:  --><div ng-view="" class="view-animate ng-scope" style=""><div class="ng-binding ng-scope">
+  controller: ChapterCtrl<br>
+  Book Id: Gatsby<br>
+  Chapter Id: 4
+</div>
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+--></div>
+  </div>
+  <hr>
+
+  <pre class="ng-binding">$location.path() = ./Book/Gatsby/ch/4</pre>
+  <pre class="ng-binding">$route.current.templateUrl = chapter.html</pre>
+  <pre class="ng-binding">$route.current.params = {"key":"value","bookId":"Gatsby","chapterId":"4"}</pre>
+  <pre class="ng-binding">$routeParams = {"key":"value","bookId":"Gatsby","chapterId":"4"}</pre>
+</div>
+
+
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+--></body></html>

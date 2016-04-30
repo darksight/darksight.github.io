@@ -1,0 +1,1 @@
+https://docs.angularjs.org/api/ngRoute/directive/ngView
