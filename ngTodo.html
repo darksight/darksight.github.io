@@ -5,165 +5,47 @@
 <body>
 
 <!-- ngView: undefined -->
-<p>OK - 1 </p>
+<p>OK - 1a </p>
 <!--BEGIN Local (Filter)-->
-  
-  <!-- ngView: undefined -->
   <ng-view class="ng-scope"><span class="ng-scope">
   Search: </span><input type="text" ng-model="search.name" class="ng-scope ng-pristine ng-valid">
   <ul class="ng-scope">
-    <!-- ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
+    <li ng-repeat="todo in todos | filter: search" class="ng-scope">
       <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
       <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/0" class="ng-binding">AngularJS Directives</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
+    </li><li ng-repeat="todo in todos | filter: search" class="ng-scope">
       <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
       <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/1" class="ng-binding">Data binding</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
+    </li><li ng-repeat="todo in todos | filter: search" class="ng-scope">
       <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
       <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/2" class="ng-binding">$scope</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
+    </li><li ng-repeat="todo in todos | filter: search" class="ng-scope">
       <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
       <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/3" class="ng-binding">Controllers and Modules</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
+    </li><li ng-repeat="todo in todos | filter: search" class="ng-scope">
       <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
       <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/4" class="ng-binding">Templates and routes</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
+    </li><li ng-repeat="todo in todos | filter: search" class="ng-scope">
       <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
       <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/5" class="ng-binding">Filters and Services</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
+    </li><li ng-repeat="todo in todos | filter: search" class="ng-scope">
       <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
       <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/6" class="ng-binding">Get started with Node/ExpressJS</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
+    </li><li ng-repeat="todo in todos | filter: search" class="ng-scope">
       <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
       <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/7" class="ng-binding">Setup MongoDB database</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
+    </li><li ng-repeat="todo in todos | filter: search" class="ng-scope">
       <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
       <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/8" class="ng-binding">Be awesome!</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search -->
-  </ul>
-</ng-view>
-
-<!-- Libraries -->
-<script src="./angular.min.js"></script>
-<script src="./angular-route.min.js"></script>
-
-<!-- Template -->
-<script type="text/ng-template" id="/todos.html">
-  Search: <input type="text" ng-model="search.name">
-  <ul>
-    <li ng-repeat="todo in todos | filter: search">
-      <input type="checkbox" ng-model="todo.completed">
-      <a href="#/{{$index}}">{{todo.name}}</a>
     </li>
   </ul>
-</script>
-
-<script type="text/ng-template" id="/todoDetails.html">
-  <h1>{{ todo.name }}</h1>
-  completed: <input type="checkbox" ng-model="todo.completed">
-  note: <textarea>{{ todo.note }}</textarea>
-</script>
-
-<script>
-  angular.module('app', ['ngRoute'])
-
-    //---------------
-    // Services
-    //---------------
-
-    .factory('Todos', function(){
-      return [
-        { name: 'AngularJS Directives', completed: true, note: 'add notes...' },
-        { name: 'Data binding', completed: true, note: 'add notes...' },
-        { name: '$scope', completed: true, note: 'add notes...' },
-        { name: 'Controllers and Modules', completed: true, note: 'add notes...' },
-        { name: 'Templates and routes', completed: true, note: 'add notes...' },
-        { name: 'Filters and Services', completed: false, note: 'add notes...' },
-        { name: 'Get started with Node/ExpressJS', completed: false, note: 'add notes...' },
-        { name: 'Setup MongoDB database', completed: false, note: 'add notes...' },
-        { name: 'Be awesome!', completed: false, note: 'add notes...' },
-      ];
-    })
-
-    //---------------
-    // Controllers
-    //---------------
-
-    .controller('TodoController', ['$scope', 'Todos', function ($scope, Todos) {
-      $scope.todos = Todos;
-    }])
-
-    .controller('TodoDetailCtrl', ['$scope', '$routeParams', 'Todos', function ($scope, $routeParams, Todos) {
-      $scope.todo = Todos[$routeParams.id];
-    }])
-
-    //---------------
-    // Routes
-    //---------------
-
-    .config(['$routeProvider', function ($routeProvider) {
-      $routeProvider
-        .when('/', {
-          templateUrl: '/todos.html',
-          controller: 'TodoController'
-        })
-
-        .when('/:id', {
-          templateUrl: '/todoDetails.html',
-          controller: 'TodoDetailCtrl'
-       });
-    }]);
-</script>
-
-  <!---->
-  <!-- END Local (Filter)-->
-  
-  
-  
-  
-  <!--OK number 2-->
-  <!--BEGIN Local (Filter)-->
-  
-  <!-- ngView: undefined -->
-  <ng-view class="ng-scope"><span class="ng-scope">
-  Search: </span><input type="text" ng-model="search.name" class="ng-scope ng-pristine ng-valid">
-  <ul class="ng-scope">
-    <!-- ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
-      <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
-      <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/0" class="ng-binding">AngularJS Directives</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
-      <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
-      <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/1" class="ng-binding">Data binding</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
-      <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
-      <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/2" class="ng-binding">$scope</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
-      <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
-      <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/3" class="ng-binding">Controllers and Modules</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
-      <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
-      <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/4" class="ng-binding">Templates and routes</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
-      <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
-      <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/5" class="ng-binding">Filters and Services</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
-      <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
-      <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/6" class="ng-binding">Get started with Node/ExpressJS</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
-      <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
-      <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/7" class="ng-binding">Setup MongoDB database</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search --><li ng-repeat="todo in todos | filter: search" class="ng-scope">
-      <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
-      <a href="https://cdn.rawgit.com/amejiarosario/068143b53e54db43ef38/raw/b703b591bc84f2d59a2a483169294e2fb232419d/ngTodo.html#/8" class="ng-binding">Be awesome!</a>
-    </li><!-- end ngRepeat: todo in todos | filter: search -->
-  </ul>
 </ng-view>
 
-<!-- Libraries -->
-<script src="./angular.min.js"></script>
-<script src="./angular-route.min.js"></script>
 
-<!-- Template -->
+<script src="./ngTodo_files/angular.min.js"></script>
+<script src="./ngTodo_files/angular-route.min.js"></script>
+
+
 <script type="text/ng-template" id="/todos.html">
   Search: <input type="text" ng-model="search.name">
   <ul>
