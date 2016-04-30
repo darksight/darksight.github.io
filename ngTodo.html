@@ -178,9 +178,10 @@
 </script>
 
 <script>
-alert('alert here');
+alert('alert here 1');
   angular.module('app', ['ngRoute'])
 
+alert('alert here 2');
     //---------------
     // Services
     //---------------
@@ -215,7 +216,7 @@ alert('alert here');
     //---------------
     // Routes
     //---------------
-
+alert('alert here 3');
     .config(['$routeProvider', function ($routeProvider) {
       $routeProvider
         .when('/', {
@@ -228,6 +229,9 @@ alert('alert here');
           controller: 'TodoDetailCtrl'
        });
     }]);
+    
+
+alert('alert here 4');
 </script>
 
      <!-- <script type="text/javascript">angular.bootstrap(document.getElementById("myApp300Id"), ['myApp300']);</script> -->
