@@ -132,16 +132,16 @@ alert('alert here 1');<!---->
     <!--alert('alert here 3');-->
     .config(['$routeProvider', function ($routeProvider) {
     	
-alert('alert here 1g');<!---->
+<!--alert('alert here 1g');-->
       $routeProvider
         .when('/', {
-alert('alert here 1h');	
+<!--alert('alert here 1h');	causes error-->
           templateUrl: '/todos.html',
           controller: 'TodoController'
         })
 
         .when('/:id', {
-alert('alert here 1i');	
+<!--alert('alert here 1i');	causes error-->
           templateUrl: '/todoDetails.html',
           controller: 'TodoDetailCtrl'
        });
