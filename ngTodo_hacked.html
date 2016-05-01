@@ -115,12 +115,12 @@ alert('alert here 1');<!---->
     //---------------
     // Controllers
     //---------------
-<!--alert('alert here 1cthis alert gives unexpected token -->
+<!--alert('alert here 1c); this alert gives unexpected token -->
     .controller('TodoController', ['$scope', 'Todos', function ($scope, Todos) {
     	alert('alert here 1d');<!---->
       $scope.todos = Todos;
     }])
-alert('alert here 1e');<!---->
+<!--alert('alert here 1e'); this alert gives unexpected token -->
     .controller('TodoDetailCtrl', ['$scope', '$routeParams', 'Todos', function ($scope, $routeParams, Todos) {
     	alert('alert here 1f');<!---->
       $scope.todo = Todos[$routeParams.id];
