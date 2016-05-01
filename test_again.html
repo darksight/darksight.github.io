@@ -23,10 +23,9 @@
 <body>
 
 <div ng-app="app" class="ng-scope">
-<p>OK ngTodo Hacked apart - 13k</p>
+<p>OK ngTodo Hacked apart - 13b</p>
 
-<!-- Libraries
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"> -->
+<!-- Libraries -->
 <script src="./angular.min.js"></script>
 <script src="./angular-route.min.js"></script>
 
@@ -90,18 +89,16 @@ alert('alert here 3');<!---->
 </script>
 
 <script>
-
 alert('alert here 1');<!---->
-
   angular.module('app', ['ngRoute'])
-<!--alert('alert here 1aX'); this alert really not good here -->
+<!--alert('alert here 1a'); no shure about this alert-->
 
     //---------------
     // Services
     //---------------
 
     .factory('Todos', function(){
-    	<!--alert('alert here 1a');-->
+      alert('here - 2');
       return [
         { name: 'AngularJS Directives', completed: true, note: 'add notes...' },
         { name: 'Data binding', completed: true, note: 'add notes...' },
@@ -125,7 +122,7 @@ alert('alert here 1');<!---->
     }])
 <!--alert('alert here 1e'); this alert gives unexpected token -->
     .controller('TodoDetailCtrl', ['$scope', '$routeParams', 'Todos', function ($scope, $routeParams, Todos) {
-    	<!--alert('alert here 1f');-->
+    	alert('alert here 1f');<!----> 
       $scope.todo = Todos[$routeParams.id];
     }])
 
@@ -151,7 +148,7 @@ alert('alert here 1');<!---->
     }]);
     
 
-alert('alert here 4');<!---->
+<!--alert('alert here 4');-->
 </script>
 </div>
 </body></html>
