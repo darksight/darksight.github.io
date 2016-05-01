@@ -23,7 +23,7 @@
 <body>
 
 <div ng-app="app" class="ng-scope">
-<p>OK ngTodo Hacked apart - 13j</p>
+<p>OK ngTodo Hacked apart - 13h</p>
 
 <!-- Libraries
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"> -->
@@ -94,7 +94,7 @@ alert('alert here 3');<!---->
 alert('alert here 1');<!---->
 
   angular.module('app', ['ngRoute'])
-alert('alert here 1aX'); <!--no shure about this alert-->
+<!--alert('alert here 1aX'); this alert really not good here -->
 
     //---------------
     // Services
@@ -120,7 +120,7 @@ alert('alert here 1aX'); <!--no shure about this alert-->
     //---------------
 <!--alert('alert here 1c); this alert gives unexpected token -->
     .controller('TodoController', ['$scope', 'Todos', function ($scope, Todos) {
-    	<!--alert('alert here 1d');-->
+    	alert('alert here 1d');<!---->
       $scope.todos = Todos;
     }])
 <!--alert('alert here 1e'); this alert gives unexpected token -->
