@@ -24,7 +24,7 @@
 <body>
 
 <div ng-app="app" class="ng-scope">
-<p>OK ngTodo Hacked apart - 20</p>
+<p>OK ngTodo Hacked apart - 21</p>
 
 <!-- Libraries -->
 <script src="./angular.min.js"></script>
@@ -35,7 +35,7 @@
   
   <!-- ngView: undefined -->
   <ng-view class="ng-scope"><span class="ng-scope">
-  Search: </span><input type="text" ng-model="search.name" class="ng-scope ng-pristine ng-valid">
+  Search: </span><input type="text" ng-model="$parent.search.name" class="ng-scope ng-pristine ng-valid">
   <ul class="ng-scope">
     <li ng-repeat="todo in todos | filter: search" class="ng-scope">
       <input type="checkbox" ng-model="todo.completed" class="ng-pristine ng-valid">
